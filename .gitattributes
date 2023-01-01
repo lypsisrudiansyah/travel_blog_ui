@@ -1,0 +1,3 @@
+# Example of a `.gitattributes` file which reclassifies `.css` files as JavaScript:
+*.cpp linguist-language=Dart
+*.h linguist-language=Dart
