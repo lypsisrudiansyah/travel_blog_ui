@@ -2,7 +2,7 @@
 
 ![travel appui1](https://user-images.githubusercontent.com/52348378/210148754-c7ede50e-2164-47d2-85b3-eda93b1f41d8.jpg)
 ![travel appui2](https://user-images.githubusercontent.com/52348378/210148756-74c3e94e-7b20-4401-b72b-1270d2d327f7.jpg)
-
+(https://github.com/lypsisrudiansyah/travel_blog_ui/blob/master/preview/travel_blog_ui_preview.mp4?raw=true)
 
 ## Inspiration from 
 https://github.com/jiang111/flutter_code
