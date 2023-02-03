@@ -8,7 +8,7 @@ class MostPopular extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-        padding: EdgeInsets.only(left: 15, right: 15, bottom: 15),
+        padding: const EdgeInsets.only(left: 15, right: 15, bottom: 15),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           var travel = _list[index];
@@ -38,14 +38,14 @@ class MostPopular extends StatelessWidget {
                         color: Colors.transparent,
                         child: Text(
                           travel.location,
-                          style: TextStyle(color: Colors.white, fontSize: 15),
+                          style: const TextStyle(color: Colors.white, fontSize: 15),
                         ),
                       ),
                       Material(
                         color: Colors.transparent,
                         child: Text(
                           travel.name,
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+                          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
                         ),
                       )
                     ],
@@ -55,7 +55,7 @@ class MostPopular extends StatelessWidget {
             ),
           );
         },
-        separatorBuilder: (_, index) => SizedBox(width: 15),
+        separatorBuilder: (_, index) => const SizedBox(width: 15),
         itemCount: _list.length);
   }
 }

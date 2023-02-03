@@ -38,10 +38,10 @@ class TravelBlog extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Material(color: Colors.transparent, child: Text(travel.location, style: TextStyle(color: Colors.white, fontSize: 20))),
+                      Material(color: Colors.transparent, child: Text(travel.location, style: const TextStyle(color: Colors.white, fontSize: 20))),
                       Material(
                           color: Colors.transparent,
-                          child: Text(travel.name, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30))),
+                          child: Text(travel.name, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30))),
                     ],
                   ),
                 ),
@@ -52,7 +52,7 @@ class TravelBlog extends StatelessWidget {
                     width: 60,
                     height: 60,
                     decoration: BoxDecoration(color: Colors.blue[300], borderRadius: BorderRadius.circular(30)),
-                    child: Icon(Icons.chevron_right_sharp, color: Colors.white, size: 30),
+                    child: const Icon(Icons.chevron_right_sharp, color: Colors.white, size: 30),
                   ),
                 )
               ],

@@ -5,7 +5,7 @@ class DetailPage extends StatelessWidget {
   final Travel travel;
   final double expandedHeight = 300;
   final double roundedContainerHeight = 50;
-  DetailPage({required this.travel});
+  const DetailPage({required this.travel});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,8 +36,8 @@ class DetailPage extends StatelessWidget {
                       onTap: () {
                         Navigator.of(context).pop();
                       },
-                      child: Icon(Icons.arrow_back, color: Colors.white)),
-                  Icon(Icons.menu, color: Colors.white),
+                      child: const Icon(Icons.arrow_back, color: Colors.white)),
+                  const Icon(Icons.menu, color: Colors.white),
                 ],
               ),
             ),
@@ -63,8 +63,8 @@ class DetailPage extends StatelessWidget {
       child: Column(
         children: [
           _buildUserInfo(),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
             child: Text(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
               style: TextStyle(color: Colors.grey, fontSize: 16, height: 1.5),
@@ -75,7 +75,7 @@ class DetailPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   'Featured',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, letterSpacing: 1.5),
                 ),
@@ -96,8 +96,8 @@ class DetailPage extends StatelessWidget {
             ),
           ),
           SizedBox(height: 160, child: FeaturedWidget()),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
             child: Text(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
               style: TextStyle(color: Colors.grey, fontSize: 16, height: 1.5),
@@ -130,11 +130,11 @@ class DetailPage extends StatelessWidget {
                 children: [
                   Text(
                     "${travel.name} User",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     travel.location,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                     ),
                   ),
@@ -186,10 +186,10 @@ class DetailSliverDelegate extends SliverPersistentHeaderDelegate {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(travel.name, style: TextStyle(color: Colors.white, fontSize: 30)),
+                Text(travel.name, style: const TextStyle(color: Colors.white, fontSize: 30)),
                 Text(
                   travel.location,
-                  style: TextStyle(color: Colors.white, fontSize: 15),
+                  style: const TextStyle(color: Colors.white, fontSize: 15),
                 )
               ],
             ))
@@ -214,16 +214,16 @@ class FeaturedWidget extends StatelessWidget {
   @override
   Widget build(Object context) {
     return ListView.separated(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           var travel = _list[index];
-          return Container(
+          return SizedBox(
             width: 120,
             child: Image.asset(travel.url, fit: BoxFit.cover),
           );
         },
-        separatorBuilder: (_, index) => SizedBox(width: 10),
+        separatorBuilder: (_, index) => const SizedBox(width: 10),
         itemCount: _list.length);
   }
 }

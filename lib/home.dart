@@ -30,8 +30,8 @@ class HomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 15),
+              const Padding(
+                padding: EdgeInsets.only(left: 15),
                 child: Text(
                   'Travel Blog',
                   style: TextStyle(fontSize: 36),
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Most Popular',
                       style: TextStyle(fontSize: 20),
                     ),
