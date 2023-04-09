@@ -4,7 +4,8 @@
 ![travel appui2](https://user-images.githubusercontent.com/52348378/210148756-74c3e94e-7b20-4401-b72b-1270d2d327f7.jpg)
 
 ## Preview Video
-https://user-images.githubusercontent.com/52348378/216573273-a5e60ef3-1346-4e09-a38b-aa2c56ec0c3d.mp4
+<video src='https://user-images.githubusercontent.com/52348378/216573273-a5e60ef3-1346-4e09-a38b-aa2c56ec0c3d.mp4' width=180/> 
+
 
 
 ## Inspiration from 
